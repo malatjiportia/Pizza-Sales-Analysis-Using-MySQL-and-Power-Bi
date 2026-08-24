@@ -4,7 +4,7 @@
 
 **A two-part analysis of a year of transactional sales data for Plato's Pizza, a fictitious Greek-inspired pizzeria in Hazelwood — built as part of a Maven Analytics challenge.** The same dataset is analyzed two ways: a **Power BI dashboard** for exploratory, visual reporting, and a **MySQL EDA** that layers on a dual-metric segmentation approach to flag which menu items are actually worth keeping.
 
-[Add link to `.sql` file] · [Add link to `.pbix` file / dashboard export]
+[PIzzaSales.sql] · [PizzaSalesPowerBi.pbix file]
 
 ---
 
@@ -85,7 +85,7 @@ The "weak SKU" threshold (**< 800 units sold AND < R10,000 revenue**) was set an
 | 6–9 | Top 5 pizzas per category | Identified for Classic, Supreme, Chicken, and Veggie |
 | 10–11 | Weak products (low volume *and* low revenue) | **65 product–size combinations** flagged for review |
 
-Full queries and outputs are in [`pizza_eda.sql`](./pizza_eda.sql).
+Full queries and outputs are in (./PizzaSales.sql).
 
 ---
 
@@ -146,11 +146,10 @@ This analysis was built strictly from the data provided — being upfront about 
 
 ```
 ├── README.md
-├── PizzaSales.pbix              # Power BI file
-├── Pizza_Sales_Dashboard.pdf    # Static export of the dashboard
-├── pizza_eda.sql                # All 11 SQL queries, commented
-├── data/                        # Source tables (orders, order_details, pizzas, pizza_types)
-└── assets/                      # Screenshots for this README
+├── PizzaSalesPowerBI.pbix              # Power BI file
+├── Pizza_Sales_Analysis_Report.dox     # Static export of the dashboard
+├── PizzaSales.sql                      # All 11 SQL queries, commented
+├── Pizza+Place+Sales                   # Source tables (orders, order_details, pizzas, pizza_types)
 ```
 
 ---
